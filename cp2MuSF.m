@@ -7,7 +7,7 @@ function [ muS ] = cp2MuSF( tc,cP,zRef,z,varargin )
 alpha = [0.12 0.15 0.22 0.3]; % 指数
 
 if nargin == 5 
-    if string(varargin) == 'prototypeCode' % 1、几何尺度为原型 2、需要使用规范中的保守处理方式
+    if strcmp(varargin,'prototypeCode')   % 1、几何尺度为原型 2、需要使用规范中的保守处理方式
         hg = [300 350 450 550]; % 梯度风高度
         if tc == 1
             z(z<=5) = 5;

@@ -3,7 +3,6 @@ function [ thetaV ] = thetaVF(bH,b0)
 
 thetaVTable = [1:-0.1:0.1; 1 1.1 1.2 1.32 1.5 1.75 2.08 2.53 3.3 5.6];
 
-
 if bH/b0 < 1 && bH/b0 > 0.1
     thetaV = interp1(thetaVTable(1,:),thetaVTable(2,:),bH/b0);
 elseif bH/b0 > 0 && bH/b0 < 0.1

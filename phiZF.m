@@ -6,6 +6,7 @@ function [ phiZ ] = phiZF(flag,bt,i,z,h,varargin)
 % z         计算高度
 % h         建筑物总高度
 % mode_coef 自定义振型系数
+
 zH = 0:0.1:1;
 if flag == 1
     if bt == 1

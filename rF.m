@@ -12,8 +12,6 @@ function [ R ] = rF( tc,w0,freq1,zeta1 )
 %     zeta1 = 0.02; % 有填充墙的钢结构
 % end
 
-
-
 kw = [1.28 1 0.54 0.26];
 x1 = 30*freq1/sqrt(kw(tc)*w0);
 if x1 <= 5
